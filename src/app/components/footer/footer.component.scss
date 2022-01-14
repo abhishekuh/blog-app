@@ -1,0 +1,34 @@
+.footer-heading {
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 1em;
+  }
+  .footer-items {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+  }
+  .footer-items span {
+    margin-bottom: 0.5em;
+    cursor: pointer;
+  }
+  .footer-container {
+    background-color: #e9ecef;
+    padding: 1em;
+    color: black;
+  }
+  .footer-items a {
+    text-decoration: none !important;
+    color: black;
+  }
+  .open-hrs-box {
+    border: 2px solid black;
+    padding: 1em;
+  }
+  .open-hrs-item {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-item-margin {
+  }
+  

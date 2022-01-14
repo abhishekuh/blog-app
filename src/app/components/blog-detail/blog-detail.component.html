@@ -1,0 +1,35 @@
+<div class="container">
+    <div *ngFor="let b of blog">
+        <div class="blog-holder">
+            <div class="card-heading">
+                <div class="blog-title">{{b?.title}}</div>
+                <div style="margin:2em 0;">{{b?.publish_date | date}}</div>
+            </div>
+            <!-- <div class="blog-detail-container text-center">
+            </div> -->
+            <div [innerHtml]="b?.content"></div>
+            <div class="mt-3">By : </div>
+            <div class="blog-author mt-3 mb-3">
+                <div class="author-name">{{b?.author}}</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-3">Comments : </div>
+    <div class="mb-3">
+        <form [formGroup]="addCommentForm" (ngSubmit)="onSubmit()">
+            <div class="mb-2">
+                <input type="text" formControlName="comment" class="form-control" id="commentInput" required>
+            </div>
+            <button type="submit" class="btn btn-primary app-btn">Post</button>
+        </form>
+    </div>
+    <div *ngFor="let c of comments" class="comment-holder mb-2">
+        <p>{{c.content}}</p>
+        <div class="comment-footer">
+            <div class="author-name">By : {{c?.user}}</div>
+            <div>{{c.date | date}}</div>
+        </div>
+    </div>
+
+</div>

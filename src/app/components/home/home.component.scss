@@ -1,0 +1,33 @@
+.home-banner-text{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 400;
+    margin: 50px;
+}
+
+.carousel-container{
+    // margin-top: 1em;
+}
+
+.footer{
+    height: 200px;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.home-section-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid lightgrey;
+}
+.add-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.add-container div{
+    margin-right: 2em;
+}

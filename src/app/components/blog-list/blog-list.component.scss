@@ -1,0 +1,29 @@
+.blog-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2em 0;
+}
+.blog-card{
+    margin-bottom: 2em;
+    cursor: pointer;
+    box-shadow: 0 0 3px 0 #d3d3d3;
+    border: none;
+    width: 30%;
+    margin-right: 2em;
+}
+.card-body:hover {
+    box-shadow: 0 0 3px 3px #d3d3d3;
+}
+.card-heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    flex-wrap: wrap;
+}
+.blog-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.blog-author{
+    color: grey;
+}

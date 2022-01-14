@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="blog-card-container">
+        <div *ngFor="let b of blogs" class="card blog-card" routerLink="/blog-detail/{{b.id}}">
+            <div class="card-body">
+                <div class="card-heading">
+                    <div>
+                        <div class="blog-title">{{b.title}}</div>
+                        <div class="blog-author">By : {{b.author}}</div>
+                    </div>
+                    <div>
+                        <span>{{b.publish_date | date}}</span>
+                    </div>
+                </div>
+                <p>{{b.description}}</p>
+            </div>
+        </div>
+    </div>
+</div>
